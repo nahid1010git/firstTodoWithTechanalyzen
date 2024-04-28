@@ -1,0 +1,175 @@
+::after,
+::before,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.589)), url("./images/78e53e6e2d939d9b8282d35c2553e19f.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  padding: 8px 0px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.todo_container {
+  background-image: linear-gradient(
+    rgba(212, 0, 255, 0.61),
+    rgba(0, 119, 128, 0.781)
+  );
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0px auto;
+  min-height: 300px;
+  max-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(255, 166, 0, 0.596);
+  border-radius: 5px;
+}
+.input_area {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+.user_input {
+  flex-grow: 1;
+  height: 100%;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+#addNewTask {
+  height: 100%;
+  flex-basis: 100px;
+  background-color: green;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#addNewTask:hover {
+  background-color: rgba(0, 128, 0, 0.329);
+  cursor: pointer;
+  color: white;
+}
+
+.todo_list {
+  min-height: 300px;
+  max-height: 100vh;
+  padding: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.single_item {
+  background-color: rgba(0, 128, 0, 0.534);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 8px;
+  display: flex;
+  padding: 3px;
+}
+
+#taskName {
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+}
+
+
+
+#edit {
+
+  padding: 0px 5px;
+  height: 100%;
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 80px;
+
+}
+
+#edit:hover {
+  transform: scale(1.2);
+  margin-right: 10px;
+
+}
+
+#delete {
+  height: 100%;
+  width: 80px;
+  padding: 0px 5px;
+  background-color: rgba(255, 0, 149, 0.568);
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+#delete:hover {
+  transform: scale(1.2);
+  margin-left: 10px;
+
+}
+
+/* this style for when task will edit */
+
+#edit_input{
+    flex-grow: 1;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+   
+
+}
+
+#update_button{
+    background-color: rebeccapurple;
+    height: 100%;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+padding: 0px 5px;
+font-size: 14px;
+color: white;
+text-transform: uppercase;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#update_button:hover{
+    background-color:rgba(255, 166, 0, 0.541);
+    color: black;
+}
